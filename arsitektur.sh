@@ -5,8 +5,8 @@
 │        Client Side         │
 │  (Browser: Pembeli/Nelayan)│
 │                            │
-│ TailwindCSS + HTML + JS   │
-└────────────┬──────────────┘
+│ TailwindCSS + HTML + JS    │
+└────────────┬───────────────┘
              │
              ▼
 ┌────────────────────────────┐
@@ -20,7 +20,7 @@
 │ - Jadwal Shalat (API)      │
 │ - Cuaca Laut (API)         │
 │ - Tips Keamanan Laut       │
-└────────────┬──────────────┘
+└────────────┬───────────────┘
              │
              ▼
 ┌────────────────────────────┐
@@ -30,7 +30,7 @@
 │ - nelayan, pembeli         │
 │ - ikan, pesanan, pembayaran│
 │ - chat, tips_keamanan      │
-└────────────┬──────────────┘
+└────────────┬───────────────┘
              │
              ▼
 ┌────────────────────────────┐
