@@ -27,7 +27,7 @@ Dokumen ini menjelaskan kebutuhan perangkat lunak untuk sistem "Ikan Shop", yait
 ### 2.3 Batasan Sistem
 - Platform berbasis web (responsive).
 - Tersedia dalam bahasa Indonesia.
-- Dibangun menggunakan stack modern (PHP/JS/MySQL/Node atau Laravel/React).
+- Dibangun menggunakan stack modern (laravel, mysql, taildwind).
 
 ## 3. Kebutuhan Fungsional
 
