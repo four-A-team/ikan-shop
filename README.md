@@ -67,3 +67,8 @@ Dokumen ini menjelaskan kebutuhan perangkat lunak untuk sistem "Ikan Shop", yait
 - Halaman Pesanan & Pembayaran
 - Live Chat Interface
 
+![Gambar WhatsApp 2025-10-02 pukul 23 45 30_1811ffa4](https://github.com/user-attachments/assets/fa74770f-beb2-413c-8f6b-6bc5abcf1164)
+
+## 6. Arsitektur
+### 6.1 Role
+- Admin
