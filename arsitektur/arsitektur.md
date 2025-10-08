@@ -1,7 +1,7 @@
 ## Arsitektur Sistem
 
 ### Role Pengguna
-- **Admin**: mengelola pengguna, data ikan, dan transaksi (opsional).
+- **Admin**: mengelola pengguna, data ikan, dan transaksi.
 - **Produsen (Nelayan)**: menjual ikan, mengatur stok, berinteraksi dengan pembeli.
 - **Customer (Pembeli)**: membeli ikan, melakukan pembayaran, dan chat dengan nelayan.
 
@@ -31,7 +31,7 @@
 → Menggunakan Laravel Echo + Pusher, notifikasi akan muncul langsung di dashboard user & nelayan.
 - **Realtime Chat**
 → Socket terhubung antara pelanggan dan nelayan agar bisa diskusi langsung.
-- **Laporan Admin**
+- **Laporan statistik**
 → Menampilkan statistik total pesanan, total DP diterima, laporan hasil tangkapan, dan pendapatan nelayan.
 - **Integrasi Cuaca & Jadwal Shalat**
 → Menampilkan cuaca hari ini dan waktu shalat di dashboard nelayan dan admin.
