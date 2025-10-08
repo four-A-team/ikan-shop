@@ -135,7 +135,7 @@
 2. *Nelayan* input ikan ke sistem.
 3. *Pembeli* melihat daftar ikan → tambah ke keranjang → buat order.
 4. *Sistem hitung total + DP* → pembeli bayar.
-5. 5. *Admin/Nelayan konfirmasi pembayaran.*
+5. *Nelayan konfirmasi pembayaran.*
 6. *Notifikasi dikirim* ke pembeli.
 7. Jika ada masalah → *fitur chat* & laporan admin.
 8. *Cuaca otomatis diperbarui* → ditampilkan ke nelayan.
