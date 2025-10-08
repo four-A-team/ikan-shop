@@ -26,6 +26,20 @@
 - **API Jadwal Shalat** → informasi waktu shalat.
 - **API Tips Keamanan Laut** → memberikan edukasi keselamatan.
 
+### Planing fitur
+= **Realtime Notification**
+→ Menggunakan Laravel Echo + Pusher, notifikasi akan muncul langsung di dashboard user & nelayan.
+= **Realtime Chat**
+→ Socket terhubung antara pelanggan dan nelayan agar bisa diskusi langsung.
+= **Laporan Admin**
+→ Menampilkan statistik total pesanan, total DP diterima, laporan hasil tangkapan, dan pendapatan nelayan.
+= **Integrasi Cuaca & Jadwal Shalat**
+→ Menampilkan cuaca hari ini dan waktu shalat di dashboard nelayan dan admin.
+= **Sistem DP (Down Payment)**
+→ Nelayan bisa meminta DP dari pelanggan.
+
+
+
 ONE
 ![Gambar WhatsApp 2025-10-08 pukul 21 33 47_e4bce663](https://github.com/user-attachments/assets/17b70737-46a9-4f04-b487-75cc0f52e181)
 
