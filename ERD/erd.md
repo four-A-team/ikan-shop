@@ -6,107 +6,29 @@ ERD ini menggambarkan struktur basis data sistem IKAN SHOP, yaitu platform jual 
 Desain ERD sudah melalui proses normalisasi hingga 3NF, memastikan data tidak redundan, konsisten, dan mudah dikelola.
 
 ### 🧩 Struktur dan Hubungan Antar Entitas
-erDiagram
+![](../Image/ER-Diagram.png)
 
-    %% =====================
-    %% ENTITY: USER & ROLES
-    %% =====================
-    USER {
-        int ID_User PK
-        string Username
-        string Password
-        string Role  "admin / nelayan / pembeli"
-    }
+### 📘 Deskripsi Tiap Entitas
 
-    NELAYAN {
-        int ID_Nelayan PK
-        int ID_User FK
-        string Nama
-        string No_Kontak
-        string Alamat
-    }
+| **Entitas**        |	**Deskripsi**                                                                                                              |
+|---------           |----------                                                                                                                   |
+| **User**	         |Menyimpan data dasar pengguna seperti username, password, dan peran (role) apakah sebagai admin, nelayan, atau pembeli.      |
+| **Nelayan**	      |Menyimpan informasi nelayan yang menjual ikan. Relasi 1:1 dengan User.                                                       |
+| **Pembeli**	      |Menyimpan informasi pembeli yang melakukan transaksi pembelian ikan. Relasi 1:1 dengan User.                                 |
+| **Ikan**	         |Berisi data ikan yang dijual oleh nelayan, termasuk harga, stok, dan lokasi tangkap.                                         |
+| **Pesanan**	      |Menyimpan informasi transaksi yang dilakukan pembeli, termasuk tanggal dan status pesanan.                                   |
+| **Detail_Pesanan**	|Menyimpan rincian setiap item dalam pesanan (jenis ikan, jumlah, dan subtotal).                                              |
+| **Pembayaran**	   |Menyimpan data pembayaran pesanan, seperti tanggal, jumlah, dan metode pembayaran.                                           |
+| **Chat**	         |Menyimpan percakapan antara pembeli dan nelayan (relasi M:N melalui tabel ini).                                              |
 
-    PEMBELI {
-        int ID_Pembeli PK
-        int ID_User FK
-        string Nama
-        string Email
-        string No_Kontak
-        string Alamat
-    }
-
-    %% =====================
-    %% ENTITY: IKAN & PESANAN
-    %% =====================
-    IKAN {
-        int ID_Ikan PK
-        int ID_Nelayan FK
-        string Nama_Ikan
-        string Jenis
-        decimal Harga_per_Kg
-        int Stok_kg
-        date Tanggal_Tangkap
-        string Lokasi_Tangkap
-    }
-
-    PESANAN {
-        int ID_Pesanan PK
-        int ID_Pembeli FK
-        date Tanggal_Pesan
-        string Status_Pesanan
-        decimal Total_Harga
-    }
-
-    DETAIL_PESANAN {
-        int ID_Detail PK
-        int ID_Pesanan FK
-        int ID_Ikan FK
-        int Jumlah_Kg
-        decimal Subtotal
-    }
-
-    PEMBAYARAN {
-        int ID_Pembayaran PK
-        int ID_Pesanan FK
-        date Tanggal_Bayar
-        decimal Jumlah_Bayar
-        string Metode_Pembayaran
-        string Status_Pembayaran
-    }
-
-    %% =====================
-    %% ENTITY: CHAT
-    %% =====================
-    CHAT {
-        int ID_Chat PK
-        int ID_Pembeli FK
-        int ID_Nelayan FK
-        datetime Waktu
-        string Isi_Pesan
-    }
-
-    %% =====================
-    %% RELATIONSHIPS
-    %% =====================
-    USER ||--|| NELAYAN : "1:1"
-    USER ||--|| PEMBELI : "1:1"
-
-    NELAYAN ||--o{ IKAN : "menjual"
-    PEMBELI ||--o{ PESANAN : "melakukan"
-    PESANAN ||--o{ DETAIL_PESANAN : "memiliki"
-    DETAIL_PESANAN }o--|| IKAN : "berisi"
-    PESANAN ||--|| PEMBAYARAN : "memiliki"
-    PEMBELI }o--o{ NELAYAN : "chat dengan" 
-    PEMBELI ||--o{ CHAT : "mengirim"
-    NELAYAN ||--o{ CHAT : "menerima"
-
-
-### Relasi Antar Entitas
-- Nelayan **menjual banyak** Ikan (1:M)  
-- Pembeli **melakukan banyak** Pesanan (1:M)  
-- Pesanan **memiliki banyak** Detail_Pesanan (1:M)  
-- Detail_Pesanan **berisi satu** Ikan (M:1)  
-- Pesanan **memiliki satu** Pembayaran (1:1)  
-- Pembeli **dapat chat ke banyak** Nelayan (M:N) melalui entitas **Chat**
-
-![Gambar WhatsApp 2025-10-02 pukul 23 45 30_1811ffa4](https://github.com/user-attachments/assets/fa74770f-beb2-413c-8f6b-6bc5abcf1164)
+### 🔗 Ringkasan Relasi Antar Entitas
+| **Relasi**               | **Kardinalitas** | **Keterangan**                              |
+| :----------------------- | :--------------- | :------------------------------------------ |
+| User → Nelayan           | 1 : 1            | Setiap nelayan memiliki satu akun user      |
+| User → Pembeli           | 1 : 1            | Setiap pembeli memiliki satu akun user      |
+| Nelayan → Ikan           | 1 : M            | Satu nelayan menjual banyak ikan            |
+| Pembeli → Pesanan        | 1 : M            | Satu pembeli dapat membuat banyak pesanan   |
+| Pesanan → Detail_Pesanan | 1 : M            | Setiap pesanan memiliki beberapa item ikan  |
+| Detail_Pesanan → Ikan    | M : 1            | Tiap detail mengacu pada satu ikan tertentu |
+| Pesanan → Pembayaran     | 1 : 1            | Satu pesanan memiliki satu pembayaran       |
+| Pembeli ↔ Nelayan        | M : N            | Dapat saling chat melalui entitas Chat      |
