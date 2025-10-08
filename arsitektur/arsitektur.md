@@ -1,4 +1,4 @@
-## Arsitektur Sistem
+![Gambar WhatsApp 2025-10-08 pukul 21 33 47_e4bce663](https://github.com/user-attachments/assets/17b70737-46a9-4f04-b487-75cc0f52e181)## Arsitektur Sistem
 
 ### Role Pengguna
 - **Admin**: mengelola pengguna, data ikan, dan transaksi (opsional).
@@ -26,6 +26,10 @@
 - **API Jadwal Shalat** → informasi waktu shalat.
 - **API Tips Keamanan Laut** → memberikan edukasi keselamatan.
 
+ONE
+![Uploading Gambar WhatsApp 2025-10-08 pukul 21.33.47_e4bce663.jpg…]()
+
+TWO
 ![Gambar WhatsApp 2025-10-08 pukul 21 52 08_55d44eb3](https://github.com/user-attachments/assets/a63b4876-e6c0-4ea8-b64c-ab556d23487f)
 
 ---
