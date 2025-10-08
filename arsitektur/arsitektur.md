@@ -22,9 +22,10 @@
 
 ### API Terintegrasi
 - **API Cuaca** → menampilkan kondisi cuaca untuk mendukung nelayan.
+
 - **API Jadwal Shalat** → informasi waktu shalat.
 - **API Tips Keamanan Laut** → memberikan edukasi keselamatan.
 
-![Gambar WhatsApp 2025-10-02 pukul 23 44 19_6933de6d](https://github.com/user-attachments/assets/07bee4fe-aa22-4afb-bf7d-1144ae36aaa5)
+![Gambar WhatsApp 2025-10-08 pukul 21 52 08_55d44eb3](https://github.com/user-attachments/assets/a63b4876-e6c0-4ea8-b64c-ab556d23487f)
 
 ---
