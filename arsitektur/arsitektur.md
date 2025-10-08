@@ -27,15 +27,15 @@
 - **API Tips Keamanan Laut** → memberikan edukasi keselamatan.
 
 ### Planing fitur
-= **Realtime Notification**
+- **Realtime Notification**
 → Menggunakan Laravel Echo + Pusher, notifikasi akan muncul langsung di dashboard user & nelayan.
-= **Realtime Chat**
+- **Realtime Chat**
 → Socket terhubung antara pelanggan dan nelayan agar bisa diskusi langsung.
-= **Laporan Admin**
+- **Laporan Admin**
 → Menampilkan statistik total pesanan, total DP diterima, laporan hasil tangkapan, dan pendapatan nelayan.
-= **Integrasi Cuaca & Jadwal Shalat**
+- **Integrasi Cuaca & Jadwal Shalat**
 → Menampilkan cuaca hari ini dan waktu shalat di dashboard nelayan dan admin.
-= **Sistem DP (Down Payment)**
+- **Sistem DP (Down Payment)**
 → Nelayan bisa meminta DP dari pelanggan.
 
 
