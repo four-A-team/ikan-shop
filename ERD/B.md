@@ -1,4 +1,4 @@
-![](../IMG-20251008-WA0033.jpg)
+![ses](../IMG-20251008-WA0033.jpg)
 *1. Table `users`*
 *Fungsi*: Menyimpan semua pengguna (admin, nelayan, pembeli).
 
