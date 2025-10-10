@@ -9,7 +9,7 @@
 - **Web Browser**: digunakan oleh semua pengguna (nelayan, pembeli, admin) untuk mengakses aplikasi.
 
 ### Frontend
-- Dibangun menggunakan **Laravel (Blade)** dengan **TailwindCSS** untuk desain antarmuka.
+- Dibangun menggunakan **Laravel** dengan **TailwindCSS** untuk desain antarmuka.
 - Antarmuka responsif dan mobile-friendly.
 
 ### Backend
